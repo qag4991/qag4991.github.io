@@ -5,20 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        header {
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
             background-color: rgb(230, 122, 0);
             color: black;
-            font-size:35px;
-            text-align: center;
             padding: 10px;
-
-            
+            text-align: center;
+   
         }
 
-        p {
+        a.head {
+            position: relative;
+            top:0;
+            left:0;
+            font-size: 25px;
+            color: black;
+            text-decoration: none;
             text-align: center;
-            font-size: 100px;
 
+        }
+
+        div.log-in {
+            text-align: right;
+            color: black;
+            text-decoration: none;
+            font-size: 25px;
+            text-align: right;
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 10px;
+
+        }
+
+        a.log-in {
+            color: black;
+            text-decoration: none;
         }
 
 
@@ -26,9 +51,14 @@
 </head>
 <body>
 
-    <header>
-        <p>My Courses Demo</p>
-    </header>
+    <nav>
+        <a href="index.html" class="head">My Classes Home</a>
+
+        <div class="log-in">
+            <a href="https://www.rit.edu/myrit/home" class="log-in">Log in</a>
+        </div>
+        
+    </nav>
 
 </body>
 </html>
