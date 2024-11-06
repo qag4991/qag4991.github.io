@@ -14,6 +14,7 @@
             color: black;
             padding: 10px;
             text-align: center;
+            display: block;
    
         }
 
@@ -38,6 +39,7 @@
             top: 0;
             right: 0;
             padding: 10px;
+            display: block;
 
         }
 
@@ -46,6 +48,15 @@
             text-decoration: none;
         }
 
+        aside.grades {
+            background-color: gainsboro;
+            padding: 50px;
+            float: left;
+            height: 1250px;
+            width: 15%;
+            display: block;
+
+        }
 
     </style>
 </head>
@@ -59,6 +70,20 @@
         </div>
         
     </nav>
+    <aside class="grades">
+        <table>
+            <tr>
+                <th class="grade_table_heading">Course</th>
+                <th class="grade_table_heading">Grade ($)</th>
+            </tr>
+            <tr>
+                <td class="grade_table_class">Introduction to MyClasses</td>
+                <td class="grade_table_grade">100%</td>
+            </tr>
+
+        </table>
+
+    </aside>
 
 </body>
 </html>
