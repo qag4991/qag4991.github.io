@@ -49,12 +49,14 @@
         }
 
         aside.grades {
+            position: fixed;
             background-color: gainsboro;
             float: left;
             margin-top: 50px;
-            height: 1250px;
+            height: 100%;
             width: 15%;
             display: block;
+            top: 0;
             left: 0;
             padding: 5px;
 
@@ -65,7 +67,6 @@
             background-color: gainsboro;
             height: 20px;
             border: 2px;
-            border-color: black;
             width: 100%;
             border-collapse: collapse;
             padding: 8px;
@@ -78,6 +79,31 @@
         }
         th.grades_heading_grades{
             text-align: right;
+        }
+        aside.calander {
+            position: fixed;
+            background-color:gainsboro;
+            float: right;
+            margin-top: 50px;
+            height: 100%;
+            width: 25%;
+            display: block;
+            right: 0;
+            top: 0;
+            padding: 5px;
+        }
+        footer{
+            position: fixed;
+            text-align: center;
+            background-color: rgb(230, 122, 0) ;
+            height: 30px;
+            width: 100%;
+            display: block;
+            bottom: 0;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+
         }
 
     </style>
@@ -106,6 +132,13 @@
         </table>
 
     </aside>
+    <aside class="calander">
+        <p>this will be the calander side</p>
+    </aside>
 
+    <footer>
+        <p>This is a footer</p>
+
+    </footer>
 </body>
 </html>
