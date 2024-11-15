@@ -54,32 +54,25 @@
             float: left;
             margin-top: 50px;
             height: 100%;
-            width: 15%;
+            width: 25%;
             display: block;
             top: 0;
             left: 0;
             padding: 5px;
 
         }
-        tr.grade_table_row_heading {
-            display: block;
-            color: black;
-            background-color: gainsboro;
-            height: 20px;
-            border: 2px;
+        table,th,td{
+            text-align: center;
             width: 100%;
+            border: 1px solid black; /*will remove color later*/
             border-collapse: collapse;
-            padding: 8px;
+        }
+        
+        th.grades_grade,td.grades_grade,td.sem_sep{
+            padding: 20px;
 
         }
-        th.grades_heading_course{
-            color: black;
-            text-align: left;
 
-        }
-        th.grades_heading_grades{
-            text-align: right;
-        }
         aside.calander {
             position: fixed;
             background-color:gainsboro;
@@ -92,6 +85,7 @@
             top: 0;
             padding: 5px;
         
+    
 
         }
         footer {
@@ -123,13 +117,83 @@
     <aside class="grades">
         <table>
             <tr class="grade_table_row_heading">
-                <th class="grades_heading_course">Course</th>
-                <th class="grades_heading_grade">Grade (%)</th>
+                <th class="grades_class">Course</th>
+                <th class="grades_grade">Grade (%)</th>
             </tr>
             <tr>
-                <td class="grade_table_class">Introduction to MyClasses</td>
-                <td class="grade_table_grade">100%</td>
+                <td class="sem_sep" colspan="2" >Fall Semester 2024</td>
             </tr>
+            <tr>
+                <td class="grades_class">Introduction to MyClasses</td>
+                <td class="grades_grade">N/A</td>
+            </tr>
+            <tr>
+                <td class="grades_class">SE Freshman Seminar</td>
+                <td class="grades_grade" style="background-color: green;">100%</td>
+            </tr>
+            <tr>
+                <td class="grades_class">SoftwareDev&ProbSol</td>
+                <td class="grades_grade" style="background-color: green;">98%</td>
+            </tr>
+            <tr>
+                <td class="grades_class">Calculus I</td>
+                <td class="grades_grade" style="background-color: green;">75%</td>
+            </tr>
+            <tr>
+                <td class="grades_class">RIT 365: RIT Connections</td>
+                <td class="grades_grade" style="background-color: green;">Pass</td>
+            </tr>
+            <tr>
+                <td class="grades_class">Course 1</td>
+                <td class="grades_grade" style="background-color: rgb(255,70,70);">0%</td>
+            </tr>
+            <tr>
+                <td class="grades_class">Course 2</td>
+                <td class="grades_grade" style="background-color: rgb(255,255,102);">67%</td>
+            </tr>
+            <tr>
+                <td class="grades_class">Course 3</td>
+                <td class="grades_grade" style="background-color: rgb(255,70,70);">59%</td>
+            </tr>
+            <tr>
+                <td class="grades_class">Course 4</td>
+                <td class="grades_grade" style="background-color: green;">90%</td>
+            </tr>
+            <tr>
+                <td class="sem_sep" colspan="2" >Spring Semester 2024</td>
+            </tr>
+             <tr>
+                <td class="grades_class">Course 1</td>
+                <td class="grades_grade" style="background-color: rgb(255,70,70);">0%</td>
+            </tr>
+            <tr>
+                <td class="grades_class">Course 1</td>
+                <td class="grades_grade" style="background-color: rgb(255,70,70);">0%</td>
+            </tr>
+            <tr>
+                <td class="grades_class">Course 1</td>
+                <td class="grades_grade" style="background-color: rgb(255,70,70);">0%</td>
+            </tr>
+            <tr>
+                <td class="grades_class">Course 1</td>
+                <td class="grades_grade" style="background-color: rgb(255,70,70);">0%</td>
+            </tr>
+            <tr>
+                <td class="grades_class">Course 1</td>
+                <td class="grades_grade" style="background-color: rgb(255,70,70);">0%</td>
+            </tr>
+            <tr>
+                <td class="grades_class">Course 1</td>
+                <td class="grades_grade" style="background-color: rgb(255,70,70);">0%</td>
+            </tr>
+            <tr>
+                <td class="sem_sep" colspan="2" >Fall Semester 2023</td>
+            </tr>
+            <tr>
+                <td class="grades_class" style="font-size: 30px;">...</td>
+                <td class="grades_grade" style="background-color: green;">100%</td>
+            </tr>
+            
 
         </table>
 
