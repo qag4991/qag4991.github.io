@@ -70,7 +70,6 @@
         }
         table,th,td{
             text-align: center;
-            width: 100%;
             border: 1px solid black; /*will remove color later*/
             border-collapse: collapse;
             height: 100%;
@@ -79,6 +78,7 @@
         
         th.grades_grade,td.grades_grade,td.sem_sep{
             padding: 20px;
+            width: 14%;
 
         }
 
@@ -97,12 +97,22 @@
         }
 
         table.calander_table{
-            text-align: center;
             width: 100%;
-            padding: 10px;
-
+            border-collapse: collapse;
+            overflow-y: auto;
         }
-
+        th.calander_days, td.calander_dates {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            height: 3vh;
+        }
+        th.calander_days {
+            background-color: #f2f2f2;
+        }
+        .today {
+            background-color: #ffd700;
+        }
 
         footer {
             position: relative;
@@ -237,61 +247,61 @@
             <h1>November 2024</h1>
             <table class="calander_table">
                 <thead>
-                    <tr>
-                        <th>Sun</th>
-                        <th>Mon</th>
-                        <th>Tue</th>
-                        <th>Wed</th>
-                        <th>Thu</th>
-                        <th>Fri</th>
-                        <th>Sat</th>
+                    <tr class="calander_days">
+                        <th class="calander_days">Sun</th>
+                        <th class="calander_days">Mon</th>
+                        <th class="calander_days">Tue</th>
+                        <th class="calander_days">Wed</th>
+                        <th class="calander_days">Thu</th>
+                        <th class="calander_days">Fri</th>
+                        <th class="calander_days">Sat</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
+                    <tr class="calander_dates">
+                        <td class="calander_dates"></td>
+                        <td class="calander_dates"></td>
+                        <td class="calander_dates">1</td>
+                        <td class="calander_dates">2</td>
+                        <td class="calander_dates">3</td>
+                        <td class="calander_dates">4</td>
+                        <td class="calander_dates">5</td>
                     </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>10</td>
-                        <td>11</td>
-                        <td>12</td>
+                    <tr class="calander_dates">
+                        <td class="calander_dates">6</td>
+                        <td class="calander_dates">7</td>
+                        <td class="calander_dates">8</td>
+                        <td class="calander_dates">9</td>
+                        <td class="calander_dates">10</td>
+                        <td class="calander_dates">11</td>
+                        <td class="calander_dates">12</td>
                     </tr>
-                    <tr>
-                        <td>13</td>
-                        <td>14</td>
-                        <td>15</td>
-                        <td>16</td>
-                        <td>17</td>
-                        <td>18</td>
-                        <td>19</td>
+                    <tr class="calander_dates">
+                        <td class="calander_dates">13</td>
+                        <td class="calander_dates">14</td>
+                        <td class="calander_dates">15</td>
+                        <td class="calander_dates">16</td>
+                        <td class="calander_dates">17</td>
+                        <td class="calander_dates">18</td>
+                        <td class="calander_dates">19</td>
                     </tr>
-                    <tr>
-                        <td>20</td>
-                        <td>21</td>
-                        <td>22</td>
-                        <td>23</td>
-                        <td>24</td>
-                        <td>25</td>
-                        <td>26</td>
+                    <tr class="calander_dates">
+                        <td class="calander_dates">20</td>
+                        <td class="calander_dates">21</td>
+                        <td class="calander_dates">22</td>
+                        <td class="calander_dates">23</td>
+                        <td class="calander_dates">24</td>
+                        <td class="calander_dates">25</td>
+                        <td class="calander_dates">26</td>
                     </tr>
-                    <tr>
-                        <td>27</td>
-                        <td>28</td>
-                        <td>29</td>
-                        <td>30</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                    <tr class="calander_dates">
+                        <td class="calander_dates">27</td>
+                        <td class="calander_dates">28</td>
+                        <td class="calander_dates">29</td>
+                        <td class="calander_dates">30</td>
+                        <td class="calander_dates"></td>
+                        <td class="calander_dates"></td>
+                        <td class="calander_dates"></td>
                     </tr>
                 </tbody>
             </table>
