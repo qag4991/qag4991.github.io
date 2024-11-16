@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        html{
+            background-color: gainsboro;
+        }
+
         nav { /* nav bar */
             position: fixed;
             top: 0;
@@ -53,12 +57,15 @@
             background-color: gainsboro;
             float: left;
             margin-top: 50px;
-            height: 1500px;
+            height: auto;
             width: 25%;
             display: block;
             top: 0;
             left: 0;
             padding: 5px;
+            overflow-y: auto;
+            border: 1px solid gainsboro;
+            
 
         }
         table,th,td{
@@ -66,6 +73,8 @@
             width: 100%;
             border: 1px solid black; /*will remove color later*/
             border-collapse: collapse;
+            height: 100%;
+            overflow-y: auto;
         }
         
         th.grades_grade,td.grades_grade,td.sem_sep{
@@ -84,21 +93,43 @@
             right: 0;
             top: 0;
             padding: 5px;
-        
-    
+            border: 1px solid gainsboro;
+        }
+
+        table.calander_table{
+            text-align: center;
+            width: 100%;
+            padding: 10px;
 
         }
+
+
         footer {
-            position: fixed;
+            position: relative;
             text-align: center;
             background-color: rgb(230, 122, 0) ;
-            height: 30px;
+            height: 10px;
             width: 100%;
             display: block;
             bottom: 0;
             position: fixed;
             left: 0;
             bottom: 0;
+
+        }
+
+        .classes{
+            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 49%;
+            border: 1px solid black;
+            position: relative;
+            left: 25.5%;
+            top: 40px;
+            height: 95.5vh;
+            background-color: white;
 
         }
 
@@ -196,18 +227,88 @@
             
 
         </table>
-
+   
     </aside>
+
+
     <aside class="calander">
         <p>this will be the calander side</p>
-    </aside>
-    <section>
-        <p>This is where the classes will be listed</p>
+        <div class="calander_display">
+            <h1>November 2024</h1>
+            <table class="calander_table">
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
 
-    </section>
+        </div>
+
+    </aside>
+
+
+    <div class="classes">
+        <p>this will be the class stuff</p>
+
+
+    </div>
+
 
     <footer>
-        <p>This is a footer</p>
 
     </footer>
 </body>
