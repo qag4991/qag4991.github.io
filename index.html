@@ -130,7 +130,7 @@
             padding: 10px;
         }
         .today {     /*this is for the current date */
-            background-color: #ffd700;
+            background-color: blue;
         }
 
         footer {
@@ -161,6 +161,21 @@
             background-color: white;
 
         }
+
+        tr.calander_actions {
+            padding: 15px;
+            text-align: center;
+        }
+        .button {
+            position: relative;
+            padding: 10px;
+            background-color: lightgrey;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor:no-drop;
+        }
+
 
     </style>
 </head>
@@ -341,7 +356,7 @@
         </div>
 
 
-        <div class="tasks">
+        <div class="tasks" style="border-top: 1px solid lightgray;">
                 <h1 style="text-align: center;">My Task List</h1>
                 <ol style="font-size: 18px;">
                     <li style="border: 2px solid orange; width: 100%;">SE Freshman Seminar: Interview Paper</li>
@@ -351,6 +366,22 @@
                     <li style="border: 2px solid yellow; width: 100%;">Task</li>
                     <li style="border: 2px solid blue; width: 100%;">Task</li>
                 </ol>
+
+        </div>
+
+        <div style="border-top: 1px solid lightgray; padding: 15px;">
+            <table class="calander_actions">
+                    <tr class="calander_actions">
+                        <td><button class="button">New Event</button></td>
+                        <td><button class="button">Edit Event</button></td>
+                        <td><button class="button">Delete Event</button></td>
+                        <td><button class="button">New Task</button></td>
+                    </tr>
+                    <tr class="calander_actions">
+                        <td><button class="button">Complete Task</button></td>
+                        <td><button class="button">Change Priority</button></td>
+                    </tr>
+            </table>
 
         </div>
 
