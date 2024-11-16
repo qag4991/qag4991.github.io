@@ -68,7 +68,7 @@
             
 
         }
-        table,th,td{
+        table.grades,th.grades_class,th.grades_grade,td.grades_class,td.grades_grade{
             text-align: center;
             border: 1px solid black; /*will remove color later*/
             border-collapse: collapse;
@@ -110,7 +110,26 @@
         th.calander_days {
             background-color: #f2f2f2;
         }
-        .today {
+        table.calander_time{
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th.calander_time_y{
+            width: 30%;
+            text-align: center;
+            padding: 10px;
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+
+        }
+        th.calander_time_n{
+            border: 1px solid black;
+            width: 30%;
+            text-align: center;
+            padding: 10px;
+        }
+        .today {     /*this is for the current date */
             background-color: #ffd700;
         }
 
@@ -156,7 +175,7 @@
         
     </nav>
     <aside class="grades">
-        <table>
+        <table class="grades">
             <tr class="grade_table_row_heading">
                 <th class="grades_class">Course</th>
                 <th class="grades_grade">Grade (%)</th>
@@ -242,9 +261,22 @@
 
 
     <aside class="calander">
-        <p>this will be the calander side</p>
+
+
+        <table class="calander_time">
+            <tr>
+                <th class="calander_time_y">Monthly</th>
+                <th class="calander_time_n">Yearly</th>
+                <th class="calander_time_n">Daily</th>
+            </tr>
+
+        </table>
+
+
         <div class="calander_display">
-            <h1>November 2024</h1>
+
+            <h1 style="text-align: center;">November 2024</h1>
+            
             <table class="calander_table">
                 <thead>
                     <tr class="calander_days">
@@ -305,6 +337,20 @@
                     </tr>
                 </tbody>
             </table>
+
+        </div>
+
+
+        <div class="tasks">
+                <h1 style="text-align: center;">My Task List</h1>
+                <ol style="font-size: 18px;">
+                    <li style="border: 2px solid orange; width: 100%;">SE Freshman Seminar: Interview Paper</li>
+                    <li style="border: 2px solid red; width: 100%;">GCIS Homework</li>
+                    <li style="border: 2px solid green; width: 100%;">Calculus Topic Quizzes</li>
+                    <li style="border: 2px solid orange; width: 100%;">YOPS Portfolio</li>
+                    <li style="border: 2px solid yellow; width: 100%;">Task</li>
+                    <li style="border: 2px solid blue; width: 100%;">Task</li>
+                </ol>
 
         </div>
 
