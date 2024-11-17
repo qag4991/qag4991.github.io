@@ -6,8 +6,14 @@
     <title>Class Page</title>
 
     <style>
-            nav { /* nav bar */
-            overflow: hidden;
+        html{
+            background-color: rgb(230, 122, 0);
+            margin: 30px;
+            margin-top: 40px;
+        }
+
+
+        nav { /* nav bar */
             position: fixed;
             top: 0;
             left: 0;
@@ -50,10 +56,61 @@
             text-decoration: none;
         }
 
+        .content{
+            background-color: white;
+            height: 100%;
+        }
+        h1{
 
+            text-align: center;
+            font-size: 25px;
+        }
+        h2{
+            text-align: center;
+            display: inline-block;
+            width: 20%;
+            border: 1px solid black;
+            font-size: 20px;
+        }
+        h3{
+            display: inline-block;
+            text-align: center;
+            width: 59%;
+            border: 1px solid black;
+        }
+        .text{
+            position: relative;
+            text-align: center;
+            display: inline-flex;
+            width: 20%;
+            border: 1px solid black;
+            font-size: 18px;
+            min-height: 83.5vh;
+            height: 100%;
+        }
+        .content_tab{
+            position: relative;
+            text-align: center;
+            display: inline-flex;
+            width: 59%;
+            font-size: 18px;
+            min-height: 83.5vh;
+            height: 100%;
+            border: 1px solid black;
 
+        }
+        .content_li{
+            border-bottom: 1px solid black;
+            border-top: 1px solid black;
 
-
+        }
+        ul{
+            height: 100%;
+            width: 85%;
+        }
+        li{
+            margin-bottom: 10%;
+        }
 
 
 
@@ -72,7 +129,7 @@
 
     </style>
 </head>
-<body>\
+<body>
     <nav>
         <a href="index.html" class="head">My Classes Home</a>
 
@@ -81,6 +138,42 @@
         </div>
         
     </nav>
+
+    <h1>Class Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Course Code</h1>
+
+    <aside class="content">
+        <h2>Announcements</h2>
+        <h2>Class Info</h2>
+        <h3>Content</h3>  
+        <div class="text">
+            <ul>
+                <li>This is where any announcements will be posted. This will include any new assignments, updated to the course, or whatever the Instructor or Proffesor deems important.</li>
+                <li>They will be listed with a small seperation between them and users will be able to scroll down to see all of them.</li>
+
+            </ul>
+        </div>
+        <div class="text">
+            <ul>
+                <li>This is the class info tab. It will contain syllabus information, meeting information, and professor and TA information. It may also list requeired materials</li>
+                <li>This class meets: on ___ at ___ in ___</li>
+                <li>Required materials: Laptop, ...</li>
+
+            </ul>
+            
+        </div>
+        <div class="content_tab">
+            <ul class="content_text">
+                <li class="content_li">This is where links to assignments will be posted. This will include a discription of the assignment or reading, any requerments, and any links to resoureces  </li>
+                <li class="content_li">ex: Final Presentation Video: &#10;&#13; You should submit an approxamitely 3-5 minute long video. &#10;&#13; Each member should present resonably equaly, Submit your presentation (eg .pptx) file,
+                    Submit a link to the publicly available YouTube video of your team's presentation (you can use unlisted format if you'd prefer to not make the video public), there are a variety of existing resources that discuss how to submit videos to YouTube,
+                    We recommend using Zoom recorder.
+                    <a href="https://www.se.rit.edu/~swen-101/projects/FinalSubmission.html">Assignment info.</a>
+                </li>
+            </ul>
+            
+        </div>
+
+    </aside>
 
 
     
