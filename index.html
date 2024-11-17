@@ -148,19 +148,18 @@
         }
 
         .classes{
-            display: block;
-            display: flex;
             align-items: center;
             justify-content: center;
             width: 49%;
-            border: 1px solid black;
             position: relative;
             left: 25.5%;
-            top: 40px;
+            top: 8px;
             height: 95.5vh;
             background-color: white;
-
+            text-align: center;
         }
+
+
 
         tr.calander_actions {
             padding: 15px;
@@ -176,6 +175,34 @@
             cursor:no-drop;
         }
 
+        .course-shell {
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            background-color: gainsboro;
+            border-radius: 10px;
+            padding: 20px;
+            border: 1px solid white;
+            border-collapse: collapse;
+            justify-content: center;
+            align-items: center;
+            width: 27%;
+            padding-bottom: 10%;
+        }
+        .course-name {
+            font-size: 2vh;
+            color: #333;
+        }
+        .course-code {
+            font-size: 1.6vh;
+            color: #777;
+        }
+        .classes_p{
+            text-align: center;
+            font-size: 40px;
+            padding: 5%;
+            
+        }
 
     </style>
 </head>
@@ -238,27 +265,27 @@
                 <td class="sem_sep" colspan="2" >Spring Semester 2024</td>
             </tr>
              <tr>
-                <td class="grades_class">Course 1</td>
+                <td class="grades_class">Course 5</td>
                 <td class="grades_grade" style="background-color: rgb(255,70,70);">0%</td>
             </tr>
             <tr>
-                <td class="grades_class">Course 1</td>
+                <td class="grades_class">Course 6</td>
                 <td class="grades_grade" style="background-color: rgb(255,70,70);">0%</td>
             </tr>
             <tr>
-                <td class="grades_class">Course 1</td>
+                <td class="grades_class">Course 7</td>
                 <td class="grades_grade" style="background-color: rgb(255,70,70);">0%</td>
             </tr>
             <tr>
-                <td class="grades_class">Course 1</td>
+                <td class="grades_class">Course 8</td>
                 <td class="grades_grade" style="background-color: rgb(255,70,70);">0%</td>
             </tr>
             <tr>
-                <td class="grades_class">Course 1</td>
+                <td class="grades_class">Course 9</td>
                 <td class="grades_grade" style="background-color: rgb(255,70,70);">0%</td>
             </tr>
             <tr>
-                <td class="grades_class">Course 1</td>
+                <td class="grades_class">Course 10</td>
                 <td class="grades_grade" style="background-color: rgb(255,70,70);">0%</td>
             </tr>
             <tr>
@@ -389,7 +416,47 @@
 
 
     <div class="classes">
-        <p>this will be the class stuff</p>
+
+        <p class="classes_p">Current Classes</p>
+
+        <a href="class_page.html" class="course-shell">
+            <p class="course-name">Intro to MyClasses</p>
+            <p class="course-code">MyClasses</p>
+        </a>
+        <a href="class_page.html" class="course-shell">
+            <p class="course-name">SE Fresham Seminar</p>
+            <p class="course-code">SWEN-101</p>
+        </a>
+        <a href="class_page.html" class="course-shell">
+            <p class="course-name">SoftwareDev&ProbSol</p>
+            <p class="course-code">GCIS-123</p>
+        </a>
+        <a href="class_page.html" class="course-shell">
+            <p class="course-name">Calculus I</p>
+            <p class="course-code">Math-181</p>
+        </a>
+        <a href="class_page.html" class="course-shell">
+            <p class="course-name">RIT Conncetions</p>
+            <p class="course-code">YOPS</p>
+        </a>
+        <a href="class_page.html" class="course-shell">
+            <p class="course-name">Course 1</p>
+            <p class="course-code">C1</p>
+        </a>
+        <a href="class_page.html" class="course-shell">
+            <p class="course-name">Course 2</p>
+            <p class="course-code">C2</p>
+        </a>
+        <a href="class_page.html" class="course-shell">
+            <p class="course-name">Course 3</p>
+            <p class="course-code">C3</p>
+        </a>
+        <a href="class_page.html" class="course-shell">
+            <p class="course-name">Course 4</p>
+            <p class="course-code">C4</p>
+        </a>
+      
+
 
 
     </div>
