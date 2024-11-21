@@ -107,7 +107,7 @@
             height: 3vh;
         }
         th.calander_days {
-            background-color: #f2f2f2;
+            background-color: white;
         }
         table.calander_time{
             width: 100%;
@@ -153,7 +153,7 @@
             position: fixed;
             left: 25.5%;
             top: 49px;
-            height: 100%;
+            height: 96%;
             background-color: white;
             text-align: center;
             overflow-y: scroll;
@@ -174,6 +174,24 @@
             border-radius: 5px;
             cursor:no-drop;
         }
+        .button_active {
+            position: relative;
+            padding: 20px;
+            width: 10%;
+            background-color: lightgrey;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor:pointer;
+            vertical-align: middle;
+            text-align: center;
+            display: inline-block;
+            align-items: center;
+            
+        }
+        .button_active:hover{
+            color: gray;
+        }
 
         .course-shell {
             text-align: center;
@@ -188,6 +206,7 @@
             align-items: center;
             width: 27%;
             padding-bottom: 10%;
+            vertical-align: top;
         }
         .course-name {
             font-size: 2vh;
@@ -221,7 +240,7 @@
         <a href="index.html" class="head">My Classes Home</a>
 
         <div class="log-in">
-            <a href="https://www.rit.edu/myrit/home" class="log-in">Log in</a>
+            <a href="https://www.rit.edu/myrit/home" class="log-in" target="_blank">Log in</a>
         </div>
 
         <div class="student">
@@ -425,6 +444,8 @@
                     <tr class="calander_actions">
                         <td><button class="button">Complete Task</button></td>
                         <td><button class="button">Change Priority</button></td>
+                        <td><button class="button">Add Student Assignment</button></td>
+                        <td><button class="button">Edit Student Assignment</button></td>
                     </tr>
             </table>
 
@@ -432,46 +453,54 @@
 
     </aside>
 
-
+    
     <div class="classes">
 
         <p class="classes_p">Current Classes (Instructor)</p>
 
-        <a href="myclasses_course_page.html" class="course-shell">
+        <a href="edit_class_page.html" class="course-shell">
             <p class="course-name">Intro to MyClasses</p>
             <p class="course-code">MyClasses</p>
         </a>
-        <a href="class_page.html" class="course-shell">
+        <a href="edit_class_page.html" class="course-shell">
             <p class="course-name">SE Fresham Seminar</p>
             <p class="course-code">SWEN-101</p>
+
         </a>
-        <a href="class_page.html" class="course-shell">
+        <a href="edit_class_page.html" class="course-shell">
             <p class="course-name">SoftwareDev&ProbSol</p>
             <p class="course-code">GCIS-123</p>
+
         </a>
-        <a href="class_page.html" class="course-shell">
+        <a href="edit_class_page.html" class="course-shell">
             <p class="course-name">Calculus I</p>
             <p class="course-code">Math-181</p>
+
         </a>
-        <a href="class_page.html" class="course-shell">
+        <a href="edit_class_page.html" class="course-shell">
             <p class="course-name">RIT Conncetions</p>
             <p class="course-code">YOPS</p>
+
         </a>
-        <a href="class_page.html" class="course-shell">
+        <a href="edit_class_page.html" class="course-shell">
             <p class="course-name">Course 1</p>
             <p class="course-code">C1</p>
+
         </a>
-        <a href="class_page.html" class="course-shell">
+        <a href="edit_class_page.html" class="course-shell">
             <p class="course-name">Course 2</p>
             <p class="course-code">C2</p>
+
         </a>
-        <a href="class_page.html" class="course-shell">
+        <a href="edit_class_page.html" class="course-shell">
             <p class="course-name">Course 3</p>
             <p class="course-code">C3</p>
+
         </a>
-        <a href="class_page.html" class="course-shell">
+        <a href="edit_class_page.html" class="course-shell">
             <p class="course-name">Course 4</p>
             <p class="course-code">C4</p>
+
         </a>
       
 
